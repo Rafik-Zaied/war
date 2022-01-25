@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>War</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <button id="new-deck-button" class="new-game">New Deck</button>
+        <button id="draw-cards" class="draw">Draw Cards</button>
+      </div>
+      <h2 id="remaining-cards">Draw a New Deck to Start</h2>
+      <div id="cards-display" class="cards">
+        <div>
+          <h3>PLAYER 1 <span id="player-1-score"></span></h3>
+          <div class="card-container">
+            <div class="card-slot" id="card-1"></div>
+            <div class="card-slot" id="card-1-pile"></div>
+          </div>
+        </div>
+        <div>
+          <h3>PLAYER 2 <span id="player-2-score"></span></h3>
+          <div class="card-container">
+            <div class="card-slot" id="card-2"></div>
+            <div class="card-slot" id="card-2-pile"></div>
+          </div>
+        </div>
+      </div>
+      <h3 class="rules">
+        Each players draws a card, the highest one wins. If it's a draw, the cards go in the second
+        pile, and who wins the next hand gets double points.
+      </h3>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 90%;
+}
+
+body {
+  background-color: #027500;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.controls {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  margin: 1em auto;
+}
+
+.cards {
+  display: grid;
+  place-content: center;
+  grid-column-gap: 1em;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+.card-slot {
+  padding: 0.1em;
+  display: flex;
+  border: 2px solid #fbf37c;
+  border-radius: 5px;
+  height: 15.7em;
+  width: calc(15.7em * 5 / 7);
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #fbf37c;
+  border: none;
+  border-radius: 5px;
+  padding: 1em 1.5em;
+}
+
+h2,
+h3 {
+  color: #fbf37c;
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 105%;
+  }
+
+  .controls {
+    margin: 1.5em auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-container {
+    grid-template-columns: minmax(300, 1fr) minmax(300, 1fr);
+    justify-items: center;
+    grid-column-gap: 0.5em;
+  }
+
+  .rules {
+    max-width: 600px;
+    margin: 2em auto;
+  }
+}
