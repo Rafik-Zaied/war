@@ -8,7 +8,7 @@ A digital, revisited version of the classic card game
 * JAVASCRIPT
 
 ## External API
-* Deckof Cards https://deckofcardsapi.com/
+* Deck of Cards https://deckofcardsapi.com/
 
 ## Contact 
 * Rafik Zaied - rafik.zaied96@gmail.com
