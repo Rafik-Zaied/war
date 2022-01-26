@@ -1,4 +1,4 @@
-# War
+# war
 
 A digital, revisited version of the classic card game
 
